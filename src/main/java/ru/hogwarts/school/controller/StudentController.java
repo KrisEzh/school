@@ -31,8 +31,8 @@ public class StudentController {
         return ResponseEntity.ok(studentService.getAllStudents());
     }
     @GetMapping(path="sort")
-    public List<Student> sortByAge(@RequestParam("age") int age){
-        return studentService.sortByAge(age);
+    public List<Student> filterByAge(@RequestParam("age") int age){
+        return studentService.filterByAge(age);
     }
 
     @PostMapping
@@ -48,7 +48,8 @@ public class StudentController {
         return ResponseEntity.ok(foundStudent);
     }
     @DeleteMapping("{id}")
-    public Student deleteStudent(@PathVariable Long id){
-        return studentService.deleteStudent(id);
+    public ResponseEntity deleteStudent(@PathVariable Long id){
+         studentService.deleteStudent(id);
+         return ResponseEntity.ok().build();
     }
 }
