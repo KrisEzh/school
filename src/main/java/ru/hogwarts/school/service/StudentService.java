@@ -5,7 +5,6 @@ import ru.hogwarts.school.model.Student;
 import ru.hogwarts.school.repositories.StudentRepository;
 
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -38,6 +37,10 @@ public class StudentService {
                 .stream()
                 .filter(student -> student.getAge() == age)
                 .collect(Collectors.toList());
+    }
+    public Collection<Student> findByAgeBetween(int age, int age2){
+       return studentRepository.findByAgeBetween(age, age2);
+
     }
 
 }
