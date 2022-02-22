@@ -1,10 +1,10 @@
-package ru.hogwarts.school.controller;
+package ru.hogwarts.school.dz3.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.hogwarts.school.model.Student;
-import ru.hogwarts.school.service.StudentService;
+import ru.hogwarts.school.dz3.model.Student;
+import ru.hogwarts.school.dz3.service.StudentService;
 
 import java.util.Collection;
 import java.util.List;

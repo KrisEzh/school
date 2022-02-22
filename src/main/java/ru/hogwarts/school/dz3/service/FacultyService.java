@@ -1,13 +1,10 @@
-package ru.hogwarts.school.service;
+package ru.hogwarts.school.dz3.service;
 
 import org.springframework.stereotype.Service;
-import ru.hogwarts.school.model.Faculty;
-import ru.hogwarts.school.model.Student;
-import ru.hogwarts.school.repositories.FacultyRepository;
-import ru.hogwarts.school.repositories.StudentRepository;
+import ru.hogwarts.school.dz3.model.Faculty;
+import ru.hogwarts.school.dz3.repositories.FacultyRepository;
 
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
