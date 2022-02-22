@@ -1,4 +1,4 @@
-package ru.hogwarts.school.homeWork3.model;
+package ru.hogwarts.school.homeWork3.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
