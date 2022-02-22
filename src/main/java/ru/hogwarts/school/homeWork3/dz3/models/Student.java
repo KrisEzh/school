@@ -1,4 +1,4 @@
-package ru.hogwarts.school.homeWork3.models;
+package ru.hogwarts.school.homeWork3.dz3.models;
 
 import javax.persistence.*;
 import java.util.Objects;
