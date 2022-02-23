@@ -1,11 +1,8 @@
-package ru.hogwarts.school.homeWork3.controllers;
+package ru.hogwarts.school.homeWork3.lesson3;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.hogwarts.school.homeWork3.models.Faculty;
-import ru.hogwarts.school.homeWork3.services.FacultyService;
-
 
 import java.util.Collection;
 import java.util.List;
@@ -28,7 +25,7 @@ public class FacultyController {
     }
     @GetMapping
     public ResponseEntity<Collection<Faculty>> findFaculties(@RequestParam(required = false) String name,
-                                                               @RequestParam(required = false) String colour){
+                                                             @RequestParam(required = false) String colour){
         if(name != null && !name.isBlank() && colour != null && !colour.isBlank()){
             return ResponseEntity.ok(facultyService.findByNameOrColourIgnoreCase(name, colour));
         }

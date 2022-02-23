@@ -1,10 +1,9 @@
-package ru.hogwarts.school.homeWork3.controllers;
+package ru.hogwarts.school.homeWork3.lesson3;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.hogwarts.school.homeWork3.models.Student;
-import ru.hogwarts.school.homeWork3.services.StudentService;
+
 
 import java.util.Collection;
 import java.util.List;
@@ -52,7 +51,7 @@ public class StudentController {
     }
     @DeleteMapping("{id}")
     public ResponseEntity deleteStudent(@PathVariable Long id){
-         studentService.deleteStudent(id);
-         return ResponseEntity.ok().build();
+        studentService.deleteStudent(id);
+        return ResponseEntity.ok().build();
     }
 }

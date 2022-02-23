@@ -1,7 +1,7 @@
-package ru.hogwarts.school.homeWork3.repositories;
+package ru.hogwarts.school.homeWork3.dz3.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.hogwarts.school.homeWork3.models.Student;
+import ru.hogwarts.school.homeWork3.dz3.models.Student;
 
 import java.util.Collection;
 

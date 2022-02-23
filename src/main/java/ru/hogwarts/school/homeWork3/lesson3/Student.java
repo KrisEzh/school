@@ -1,4 +1,4 @@
-package ru.hogwarts.school.homeWork3.models;
+package ru.hogwarts.school.homeWork3.lesson3;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -47,7 +47,7 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return id == student.id && age == student.age && Objects.equals(name, student.name);
+        return id == student.id && age == student.age && Objects.equals(name, student.name) && Objects.equals(faculty, student.faculty);
     }
 
     @Override
